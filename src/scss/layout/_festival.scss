@@ -1,0 +1,34 @@
+.sobre-festival {
+    padding: $separacion 0;
+
+    img {    
+        -webkit-box-shadow: -4px 4px 16px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px 4px 16px -4px rgba(0,0,0,0.75);
+        box-shadow: -4px 4px 16px -4px rgba(0,0,0,0.75);
+    }
+    
+    @include tablet {
+        @include grid(2, $separacion);        
+    }
+   
+}
+
+.contenido-festival {
+    display: flex;
+    flex-direction: column;         /* en columnas */
+    justify-content: center;        /* centrar vertical */
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .fecha {
+        color: $rosa;
+        font-weight: bold;
+    }
+
+    .texto {
+        line-height: 1.5;
+    }
+}
+
